@@ -15,8 +15,8 @@
 
 <form action="#" method="post">
 
-<input type="text" name="prenom" id="prenom">
-
+<input type="text" name="prenom" id="prenom" placeholder="prenom">
+<input type="text" name="nom" id="nom" placeholder="nom">
 
 <button type="submit" id="submit">Inserer et afficher la fiche</button>
 </form>

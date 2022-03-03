@@ -12,8 +12,8 @@ if( !isset($mode)) $mode = '';
 
 if($mode == 'envoi'){
 
-        $insert = $mysqli->query("INSERT INTO employes (prenom) VALUES ('$prenom')");
-        $tab['resultat'] = "L'employe" . $prenom ." a bien ete ajoute";
+        $insert = $mysqli->query("INSERT INTO employes (prenom, nom) VALUES ('$prenom' , '$nom')");
+        $tab['resultat'] = "L'employe" . $prenom ." " . $nom . "a bien ete ajoute";
 }
 else {
 

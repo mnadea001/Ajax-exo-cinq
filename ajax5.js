@@ -19,7 +19,12 @@ function ajaxEnvoiForm(){
 
     let input = document.getElementById("prenom");
     let prenom = input.value;
-    let parameters = "prenom=" + prenom + "&mode=envoi";
+
+
+    let input2 = document.getElementById("nom");
+    let nom = input2.value;
+   
+    let parameters = "prenom=" + prenom + "&nom=" + nom + "&mode=envoi";
 
     request.open("POST", "ajax5.php", true);
     request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
